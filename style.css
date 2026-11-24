@@ -28,7 +28,8 @@ section {
 }
 
 .container {
-  padding: 50 px 0;
+  padding: 50px 0;
+  width: 100%;
 }
 
 .row {
@@ -287,4 +288,79 @@ PROJECTS
 .project__description--links {
   display: flex;
   justify-content: center;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+  background-color: #242424;
+  padding: 6% 0;
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__row figure {
+  margin: 0;
+}
+
+.footer__logo--img {
+width: 120px;
+display:block;
+}
+
+.footer__social--list {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 500px;
+  margin: 28px 0;
+}
+
+.footer__social--link,
+.footer__copyright {
+  color: white;
+}
+
+.footer__copyright {
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.link__hover-effect {
+  position: relative;
+}
+
+.link__hover-effect::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  transition: width 300ms ease;
+}
+
+.link__hover-effect:hover::after {
+  width: 100%;
+}
+
+.link__hover-effect--black::after {
+  background-color: black;
+}
+
+.link__hover-effect--white::after {
+  background-color: white;
 }
