@@ -239,6 +239,7 @@ PROJECTS
   opacity: 0;
   transition: opacity 300ms, transform 450ms ease;
   color: white;
+  text-align: center;
 }
 
   .project__wrapper:hover .project__wrapper--bg {
@@ -277,3 +278,13 @@ PROJECTS
   .project__description--para {
     margin: 16px 0;
   }
+
+  .project__wrapper:hover .project__description {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.project__description--links {
+  display: flex;
+  justify-content: center;
+}
